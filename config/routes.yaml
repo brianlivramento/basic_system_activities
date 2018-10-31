@@ -5,3 +5,15 @@
 index:
     path: /
     controller: App\Controller\IndexController::indexAction
+
+index2:
+    path: /index
+    controller: App\Controller\IndexController::indexAction
+
+categories:
+    path: /categories
+    controller: App\Controller\IndexController::categoriesAction
+
+activities:
+    path: /activities
+    controller: App\Controller\IndexController::activitiesAction

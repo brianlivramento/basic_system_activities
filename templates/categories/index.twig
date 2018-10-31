@@ -1,0 +1,16 @@
+{% extends "index/index.twig" %}
+
+{% block title %}Categories{% endblock %}
+
+{% block content2 %}	
+
+<br />
+<a href="/index">voltar</a>
+<ul class="collection with-header">
+    <li class="collection-header"><h4>Categories</h4></li>        
+    {% for c in categories %}
+    	<li class="collection-item">{{ c.categoryName }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

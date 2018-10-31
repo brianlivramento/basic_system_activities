@@ -5,7 +5,21 @@
 {% block content %}
 
 <div class="col s12">
-	<h1>Index!</h1>	
-</div>
+	<p class="flow-text">Getting information in URL 
+		<a target="_blank" href="https://my-json-server.typicode.com/brianlivramento/json_system_activities">my-json-server.typicode.com/brianlivramento/json_system_activities</a>
+	</p>
+	<nav>
+		<div class="nav-wrapper white">
+		  <ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="/categories"><span style="color: black;">Categories</span></a></li>
+				<li><a href="/activities"><span style="color: black;">Activities</span></a></li>
+		  </ul>
+		</div>
+	</nav>
 
+	<div class="col s12">
+		{% block content2 %}{% endblock %}
+	</div>
+
+</div>
 {% endblock %}
